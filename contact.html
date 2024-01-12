@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mahagnao Tourist Spots - Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+        <img src="img/logo.png" alt="Mahagnao Tourist Spots Logo" class="logo">
+           <h1 class="website-name">MAHAGNAO TOURIST SPOT</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+  </header>
+  
+  <div class="main-content">
+    <h1 class="page-title">CONTACT US</h1>
+    
+    <div class="contact-info">
+      <h3>Get in touch with us!</h3>
+      <p>For more information or inquiries, please contact us:</p>
+      <ul>
+        <li>Phone: <span id="phone"></span></li>
+        <li>Email: <span id="email"></span></li>
+        <li>Address: <span id="address"></span></li>
+      </ul>
+    </div>
+    
+    <div class="contact-form">
+      <h3>Send us a message</h3>
+      <form id="message-form" onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email-input" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="success-message" class="hidden">Message sent successfully!</p>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <p class="footer-text">© 2024 Mahagnao Tourist Spots. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
